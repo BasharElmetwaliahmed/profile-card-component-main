@@ -1,0 +1,127 @@
+/*set variables*/
+:root{
+    --darkcyan:hsl(185, 75%, 39%);
+    --desblue:hsl(229, 23%, 23%);
+    --grayishblue:hsl(227, 10%, 46%);
+    --darkgrau:hsl(0, 0%, 59%);
+    --namestatessize:18px;
+    --primaryfont: 'Kumbh Sans', sans-serif;
+
+}
+/* normalize padding and margin*/
+h1,h2,p,body{
+    margin: 0px;
+    padding: 0px;
+}
+/* font to all*/
+*{
+        font-family: var(--primaryfont) !important;
+
+}
+/*framework*/
+.center{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    
+}
+.column{
+    display: flex;
+    flex-direction: column;
+
+}
+.row{
+    display: flex;
+    
+}
+
+
+
+/*body*/
+body{
+    height: 100vh;
+ background-image: url("images/bg-pattern-top.svg"),
+    url("images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 40vh, left 50vw top 40vh;
+    background-color: hsl(185, 75%, 39%);
+
+
+}
+
+.card-pattern{
+         border-top-left-radius:15px ;
+     border-top-right-radius:15px ;
+}
+.card-content--img{
+   border-radius: 50%;
+   border:5px solid white;
+   width: auto ;
+   height: auto;
+}
+.card-content{
+    background-color: white;
+     border-bottom-left-radius:15px ;
+     border-bottom-right-radius:15px ;
+}
+.card-header{
+    font-size:var(--namestatessize);
+    color: var(--desblue);
+    font-weight: 700;
+}
+.card-header span{
+    padding-left: 10px;
+    font-weight: 400;
+}
+.card-content >p{
+    text-align: center;
+}
+.card-content--states{
+    text-align: center;
+     font-size: 18px;
+     justify-content: space-evenly;
+
+}
+.card-content >p ,.card-header span ,.card-content--states p{
+        color: var(--darkgrau);
+
+}
+h2,h1{
+        color: var(--desblue);
+
+}
+
+.card-content--states h2{
+    font-weight: 700;    
+     font-size: var(--namestatessize);
+
+}
+.card-content--states>div{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+hr{ 
+    background-color: #eee;
+    border: 0 none;
+    color: var(--grayishblue);
+    height: 1px;
+ 
+    margin: 22px 0px;
+}
+.card-content--states p{
+    font-size: 9px;
+    letter-spacing: 2.5px;
+    font-weight: 400;
+}
+.card-content--states{
+    padding-bottom: 20px;
+}
+
+
+main{
+    box-shadow: 1px 1px 9px var(--desblue);
+    border-radius: 15px;
+
+}
